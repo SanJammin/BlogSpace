@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: beige;
+    padding: 1rem 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+}
+
+.site-title {
+    padding-left: 3rem;
+    font-size: 2rem;
+}
+
+#blog-posts {
+    padding-left: 5rem;
+}
