@@ -6,19 +6,36 @@ body {
 }
 
 nav {
-    position: sticky;
-    top: 0;
     background-color: beige;
-    padding: 1rem 0;
-    z-index: 1000;
-    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
-.site-title {
-    padding-left: 3rem;
-    font-size: 2rem;
+nav > h3 {
+    margin: 0;
 }
 
-#blog-posts {
-    padding-left: 5rem;
+#blog-list {
+    padding: 10px;
+}
+
+form {
+    padding: 60px 10px 10px;
+    display: grid;
+    background-color: lightblue;
+}
+
+input#post-title, textarea#post-body {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
 }
