@@ -43,5 +43,6 @@ newPost.addEventListener("submit", (e) => {
         .then(post => {
             postsArray.unshift(post);
             renderPosts();
+            newPost.reset();
         })
 });
