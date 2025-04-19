@@ -25,4 +25,22 @@ newPost.addEventListener("submit", (e) => {
         title: postTitle.value,
         body: postBody.value
     };
+
+    const options = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submitNewPost)
+    }
+
+    fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
+        .then(res => res.json())
+        .then(post => {
+            document.getElementById("blog-list").innerHTML += `
+                <h3>${post.title}</h3>
+                <p>${post.body}</p>
+                <hr />
+            `;
+        })
 });
